@@ -1,26 +1,26 @@
-2023-12-22 12:58:20.870  INFO 88116 --- [main] com.example.Application                  : Starting Application on RenMacBook-Pro.local with PID 88116 (/Users/inhng/Desktop/xuanke-Server/target/classes started by inhng in /Users/inhng/Desktop/xuanke-Server)
-2023-12-22 12:58:20.872  INFO 88116 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
-2023-12-22 12:58:21.068  WARN 88116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
-2023-12-22 12:58:21.281  INFO 88116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2023-12-22 12:58:21.288  INFO 88116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-22 12:58:21.289  INFO 88116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2023-12-22 12:58:21.293  INFO 88116 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/inhng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2023-12-22 12:58:21.327  INFO 88116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-22 12:58:21.327  INFO 88116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 437 ms
-2023-12-22 12:58:21.335  INFO 88116 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2023-12-22 12:58:21.337  INFO 88116 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2023-12-22 12:58:21.337  INFO 88116 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2023-12-22 12:58:21.337  INFO 88116 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2023-12-22 12:58:21.337  INFO 88116 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2023-12-22 12:58:21.618  INFO 88116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-12-22 12:58:21.723  INFO 88116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2023-12-22 12:58:21.724  INFO 88116 --- [main] com.example.Application                  : Started Application in 1.037 seconds (JVM running for 1.373)
-2023-12-22 12:58:21.726  INFO 88116 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
-2023-12-22 12:58:28.092  INFO 88116 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-22 12:58:28.092  INFO 88116 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-22 12:58:28.094  INFO 88116 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-12-22 12:58:45.361  INFO 88116 --- [http-nio-8888-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-22 12:58:45.428  INFO 88116 --- [http-nio-8888-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-22 12:58:53.157  INFO 88116 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-12-22 12:58:53.158  INFO 88116 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-22 12:58:53.160  INFO 88116 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-22 14:11:35.239  INFO 92730 --- [main] com.example.Application                  : Starting Application on RenMacBook-Pro.local with PID 92730 (/Users/inhng/Desktop/xuanke-Server/target/classes started by inhng in /Users/inhng/Desktop/xuanke-Server)
+2023-12-22 14:11:35.240  INFO 92730 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-22 14:11:35.415  WARN 92730 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-22 14:11:35.633  INFO 92730 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-22 14:11:35.640  INFO 92730 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-22 14:11:35.641  INFO 92730 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-22 14:11:35.645  INFO 92730 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/inhng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2023-12-22 14:11:35.675  INFO 92730 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-22 14:11:35.675  INFO 92730 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 419 ms
+2023-12-22 14:11:35.684  INFO 92730 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-22 14:11:35.685  INFO 92730 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-22 14:11:35.685  INFO 92730 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-22 14:11:35.685  INFO 92730 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-22 14:11:35.685  INFO 92730 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-22 14:11:35.975  INFO 92730 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-22 14:11:36.090  INFO 92730 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-22 14:11:36.091  INFO 92730 --- [main] com.example.Application                  : Started Application in 1.01 seconds (JVM running for 1.382)
+2023-12-22 14:11:36.092  INFO 92730 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-22 14:11:44.670  INFO 92730 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-22 14:11:44.670  INFO 92730 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-22 14:11:44.674  INFO 92730 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-22 14:11:52.226  INFO 92730 --- [http-nio-8888-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-22 14:11:52.271  INFO 92730 --- [http-nio-8888-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-22 14:11:59.855  INFO 92730 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-22 14:11:59.856  INFO 92730 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-22 14:11:59.858  INFO 92730 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
