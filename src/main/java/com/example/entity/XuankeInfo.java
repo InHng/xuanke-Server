@@ -10,8 +10,6 @@ public class XuankeInfo {
 
     @Column(name = "name")
     private String name;
-    @Column(name = "description")
-    private String description;
     @Column(name = "score")
     private Integer score;
     @Column(name = "kaiban")
@@ -26,8 +24,6 @@ public class XuankeInfo {
     private Long teacherId;
     @Column(name = "studentId")
     private Long studentId;
-    @Column(name = "status")
-    private String status;
     @Transient
     private String zhuanyeName;
     @Transient
@@ -49,14 +45,6 @@ public class XuankeInfo {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public Integer getScore() {
@@ -113,14 +101,6 @@ public class XuankeInfo {
 
     public void setStudentId(Long studentId) {
         this.studentId = studentId;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getZhuanyeName() {

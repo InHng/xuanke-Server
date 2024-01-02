@@ -40,24 +40,17 @@ public class ClassInfoController {
         if (ObjectUtils.isEmpty(user)) {
             throw new CustomException("-1", "登陆已失效，请重新登陆");
         }
-
         XuankeInfo info = xuankeInfoService.find(classInfo.getName(), classInfo.getTeacherId(), user.getId());
         if (!ObjectUtils.isEmpty(info)) {
             throw new CustomException("-1", "您已经选过该门课");
         }
-
         XuankeInfo xuankeInfo = new XuankeInfo();
         BeanUtils.copyProperties(classInfo, xuankeInfo);
         xuankeInfo.setId(null);
-
         xuankeInfo.setStudentId(user.getId());
-
         xuankeInfoService.add(xuankeInfo);
-
         classInfo.setYixuan(classInfo.getYixuan() + 1);
-
         studentInfoService.xuanke(classInfo, xuankeInfo.getStudentId());
-
         classInfoService.update(classInfo);
         return Result.success();
     }

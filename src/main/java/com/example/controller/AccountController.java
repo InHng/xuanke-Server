@@ -38,13 +38,12 @@ public class AccountController {
     @PostMapping("/login")
     public Result login(@RequestBody Account user, HttpServletRequest request) {
         // 校验数据有没有填
-        if (ObjectUtil.isEmpty(user.getName()) || ObjectUtil.isEmpty(user.getPassword()) || ObjectUtil.isEmpty(user.getLevel())) {
+        if (ObjectUtil.isEmpty(user.getName()) || ObjectUtil.isEmpty(user.getPassword())
+                || ObjectUtil.isEmpty(user.getLevel())) {
             return Result.error("-1", "请完善输入信息");
         }
-
         Integer level = user.getLevel();
         Account loginUser = new Account();
-
         if (level == 1) {
             // 管理员登陆
             loginUser = adminInfoService.login(user.getName(), user.getPassword());
@@ -55,20 +54,18 @@ public class AccountController {
             // 学生登陆
             loginUser = studentInfoService.login(user.getName(), user.getPassword());
         }
-
         // 在 session 里把用户信息存一份
         request.getSession().setAttribute("user", loginUser);
-
         return Result.success(loginUser);
     }
 
     @PostMapping("/register")
     public Result register(@RequestBody Account user, HttpServletRequest request) {
         // 校验数据有没有填
-        if (ObjectUtil.isEmpty(user.getName()) || ObjectUtil.isEmpty(user.getPassword()) || ObjectUtil.isEmpty(user.getLevel())) {
+        if (ObjectUtil.isEmpty(user.getName()) || ObjectUtil.isEmpty(user.getPassword())
+                || ObjectUtil.isEmpty(user.getLevel())) {
             return Result.error("-1", "请完善输入信息");
         }
-
         Integer level = user.getLevel();
         if (level == 2) {
             TeacherInfo teacherInfo = new TeacherInfo();
@@ -81,7 +78,6 @@ public class AccountController {
             // 学生注册
             studentInfoService.add(studentInfo);
         }
-
         return Result.success();
     }
 
@@ -109,7 +105,6 @@ public class AccountController {
             StudentInfo studentInfo = studentInfoService.findById(user.getId());
             return Result.success(studentInfo);
         }
-
         return Result.success(new Account());
     }
 

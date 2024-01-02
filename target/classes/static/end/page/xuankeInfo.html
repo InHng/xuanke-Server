@@ -139,7 +139,8 @@
                                             <td>{{obj.location}}</td>
                                             <td>{{obj.studentName}}</td>
                                             <td v-if="user.level !== 2">
-                                                <buttion class = "btn btn-danger btn-sm" @click="del(obj.id)" @click="del(obj.id)">取消选课</buttion>
+                                                <buttion v-if="user.level === 1" class = "btn btn-danger btn-sm" @click="del(obj.id)" @click="del(obj.id)">退课</buttion>
+                                                <buttion v-if="user.level === 3" class = "btn btn-danger btn-sm" @click="del(obj.id)" @click="del(obj.id)">取消选课</buttion>
                                             </td>
                                         </tr>
                                         </tbody>
